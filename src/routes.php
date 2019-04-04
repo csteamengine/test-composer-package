@@ -12,7 +12,7 @@ use Csteamengine\ProjectManager\Controllers\ProjectController;
 /*
  * All route names are prefixed with 'admin.'.
  */
-Route::resource('projects', 'ProjectController');
+Route::resource('projects', ProjectController::class);
 //Route::get('projects', [ProjectController::class, 'index'])->name('projects');
 
 

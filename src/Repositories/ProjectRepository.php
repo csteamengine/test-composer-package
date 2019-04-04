@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories;
+namespace Csteamengine\ProjectManager\Repositories;
 
-use App\Models\Project;
+use Csteamengine\ProjectManager\Models\Project;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
-use App\Exceptions\GeneralException;
+use Csteamengine\LaravelExceptions\Exceptions\GeneralException;
 use App\Repositories\BaseRepository;
 
 /**

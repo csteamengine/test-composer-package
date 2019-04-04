@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Requests;
+namespace Csteamengine\ProjectManager\Requests;
 
-use App\Models\Project;
+use Csteamengine\ProjectManager\Models\Project;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ProjectRequest extends FormRequest

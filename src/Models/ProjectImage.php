@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Csteamengine\ProjectManager\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
