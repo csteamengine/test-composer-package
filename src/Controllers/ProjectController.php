@@ -2,11 +2,11 @@
 
 namespace Csteamengine\ProjectManager\Controllers;
 
-use Csteamengine\ProjectManager\Requests\ProjectRequest;
-use Csteamengine\ProjectManager\Models\Image;
-use Csteamengine\ProjectManager\Models\Project;
-use Csteamengine\ProjectManager\Models\ProjectImage;
-use Csteamengine\ProjectManager\Repositories\ProjectRepository;
+use App\Http\Requests\ProjectRequest;
+use App\Models\Image;
+use App\Models\Project;
+use App\Models\ProjectImage;
+use App\Repositories\ProjectRepository;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use PHPColorExtractor\PHPColorExtractor;
@@ -36,7 +36,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return view('ProjectManager::backend.projects.projects')->withProjects($this->projectRepository->getActivePaginated(25, 'order', 'asc'));
+        return view('backend.projects.projects')->withProjects($this->projectRepository->getActivePaginated(25, 'order', 'asc'));
     }
 
     /**

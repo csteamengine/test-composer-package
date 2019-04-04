@@ -1,8 +1,8 @@
 <?php
 
-namespace Csteamengine\ProjectManager\Models;
+namespace App\Models;
 
-use Csteamengine\ProjectManager\Models\Traits\Attribute\ProjectAttribute;
+use App\Models\Traits\Attribute\ProjectAttribute;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
