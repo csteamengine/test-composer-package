@@ -16,6 +16,6 @@ class TestController extends Controller
     public function index(){
         $testModel = new TestModel();
 
-        return view('csteamengine.testcomposerpackage.test', ['test' => $testModel->getTest()]);
+        return view('test-composer-package::test', ['test' => $testModel->getTest()]);
     }
 }

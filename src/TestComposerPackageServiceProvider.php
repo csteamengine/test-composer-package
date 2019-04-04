@@ -27,8 +27,9 @@ class TestComposerPackageServiceProvider extends ServiceProvider
             __DIR__.'/config/test-composer-package.php' => config_path('test-composer-package.php'),
         ]);
         $this->loadRoutesFrom(__DIR__.'/routes.php');
-        $this->publishes([
-            __DIR__.'/Views' => base_path('resources/views/csteamengine/testcomposerpackage'),
-        ]);
+        $this->loadViewsFrom(__DIR__.'/Views', 'test-composer-package');
+//        $this->publishes([
+//            __DIR__.'/Views' => base_path('resources/views/csteamengine/testcomposerpackage'),
+//        ]);
     }
 }
